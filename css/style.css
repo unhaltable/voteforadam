@@ -267,13 +267,12 @@ nav {
   text-align: center;
 }
 
-  #vote h1, #vote p, #countdown {
-    background: rgba(255, 255, 255, 0.5);
-    box-sizing: border-box !important;
+  #vote h1,
+  #vote p {
     color: #444;
+    margin: 0;
     padding: 1em 0 !important;
     width: 100%;
-    z-index: 99;
   }
 
 #contact {
@@ -296,7 +295,7 @@ nav {
     padding: 0.75em 4em;
     text-decoration: none;
     transition: all 0.3s;
-    width: 180px;
+    max-width: 180px;
   }
 
   .button:hover {
@@ -331,6 +330,24 @@ footer {
   .goal {
     margin: 1em 0 !important;
     width: 100% !important;
+  }
+
+  .person {
+    width: 100% !important;
+  }
+
+  footer {
+    background-position: center center;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  nav {
+    text-align: center;
+  }
+
+  #navright {
+    display: none !important;
   }
 }
 
