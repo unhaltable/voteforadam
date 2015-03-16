@@ -81,25 +81,17 @@ header {
     background-size: cover;
     display: inline-block;
     height: 100%;
-    width: 50%;
+    width: 100%;
     z-index: -1;
   }
 
   #coverleft {
-    background-image: url(../img/cover_jon_2000.jpg);
+    background-image: url(../img/adam.jpg);
   }
 
-  #coverright {
-      background-image: url(../img/cover_nick_2000.jpg);
-  }
-
-  @media only screen and (max-width: 1500px) {
+  /*@media only screen and (max-width: 1500px) {
     #coverleft {
       background-image: url(../img/cover_jon_1500.jpg);
-    }
-
-    #coverright {
-      background-image: url(../img/cover_nick_1500.jpg);
     }
   }
 
@@ -107,30 +99,22 @@ header {
     #coverleft {
       background-image: url(../img/cover_jon_1000.jpg);
     }
-
-    #coverright {
-      background-image: url(../img/cover_nick_1000.jpg);
-    }
   }
 
   @media only screen and (max-width: 500px) {
     #coverleft {
       background-image: url(../img/cover_jon_500.jpg);
     }
+  }*/
 
-    #coverright {
-      background-image: url(../img/cover_nick_500.jpg);
-    }
-  }
-
-  #coverleft::before, #coverright::before {
+  #coverleft::before {
     box-sizing: border-box;
     content: ' ';
     height: 100%;
     position: absolute;
     top: 0;
     transition: background-color 0.3s ease-in-out;
-    width: 50%;
+    width: 100%;
   }
 
   #coverleft::before {
@@ -141,16 +125,6 @@ header {
 
     #coverleft:hover::before {
       background-color: rgba(61, 169, 250, 0.5);
-    }
-
-  #coverright::before {
-    background-color: rgba(88, 252, 97, 0.45);
-    border-left: 1px solid #fff;
-    left: 50%;
-  }
-
-    #coverright:hover::before {
-      background-color: rgba(88, 252, 97, 0.5);
     }
 
   .name {
@@ -164,7 +138,7 @@ header {
     text-shadow: 0 1px 0 #333;
     top: 50%;
     white-space: break-word;
-    width: 50%;
+    width: 100%;
   }
 
 #content {
