@@ -31,8 +31,8 @@ h2 {
 }
 
 h3 {
-  font: 1em/1em 'Dosis';
-  text-transform: uppercase;
+  font: 1.5em/1em 'Dosis';
+  letter-spacing: 0.1em;
 }
 
 .sticky {
