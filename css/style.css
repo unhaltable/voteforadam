@@ -1,0 +1,528 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
+@import url(http://fonts.googleapis.com/css?family=Ovo);
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,400italic);
+
+body, html {
+  background: #292929;
+  color: #333;
+  font: 1em/1.5em Lato, Helvetica, Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+::selection {
+  background: #a4a4a4;
+}
+
+h1 {
+  font: italic 2em/1em 'Arvo';
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  font: 2.2em/0.5em 'Ovo';
+  text-shadow: 0 1px 0 #333;
+}
+
+h3 {
+  font: italic 1em/1em 'Arvo';
+}
+
+.sticky {
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+  left: 0;
+  position: fixed;
+  top: 0;
+  transition: all 0.3s;
+  width: 100%;
+  z-index: 100;
+}
+
+  .contentpush {
+    padding-top: 5em !important;
+  }
+
+.maxcontainer {
+  margin: 0 auto;
+  max-width: 2000px;
+}
+
+header {
+  background: #2e2e2e;
+  height: 100%;
+  z-index: -1;
+}
+
+  #container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+  }
+
+  #and {
+    background: #fff;
+    border-radius: 100%;
+    font-family: 'Ovo';
+    font-size: 2em;
+    left: 50%;
+    margin-left: -1em;
+    margin-top: -1em;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+  }
+
+  .cover {
+    background-position: 50% 50%;
+    background-size: cover;
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+    z-index: -1;
+  }
+
+  #coverleft {
+    background-image: url(../img/cover_jon_2000.jpg);
+  }
+
+  #coverright {
+      background-image: url(../img/cover_nick_2000.jpg);
+  }
+
+  @media only screen and (max-width: 1500px) {
+    #coverleft {
+      background-image: url(../img/cover_jon_1500.jpg);
+    }
+
+    #coverright {
+      background-image: url(../img/cover_nick_1500.jpg);
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    #coverleft {
+      background-image: url(../img/cover_jon_1000.jpg);
+    }
+
+    #coverright {
+      background-image: url(../img/cover_nick_1000.jpg);
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    #coverleft {
+      background-image: url(../img/cover_jon_500.jpg);
+    }
+
+    #coverright {
+      background-image: url(../img/cover_nick_500.jpg);
+    }
+  }
+
+  #coverleft::before, #coverright::before {
+    box-sizing: border-box;
+    content: ' ';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: background-color 0.3s ease-in-out;
+    width: 50%;
+  }
+
+  #coverleft::before {
+    background-color: rgba(51, 151, 251, 0.45);
+    border-right: 1px solid #fff;
+    left: 0;
+  }
+
+    #coverleft:hover::before {
+      background-color: rgba(61, 169, 250, 0.5);
+    }
+
+  #coverright::before {
+    background-color: rgba(88, 252, 97, 0.45);
+    border-left: 1px solid #fff;
+    left: 50%;
+  }
+
+    #coverright:hover::before {
+      background-color: rgba(88, 252, 97, 0.5);
+    }
+
+  .name {
+    color: #fff;
+    font: 2em/2em 'Ovo', serif;
+    margin-top: -1em;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    text-overflow: ellipsis;
+    text-shadow: 0 1px 0 #333;
+    top: 50%;
+    white-space: break-word;
+    width: 50%;
+  }
+
+#content {
+  background: #fff;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  z-index: 100;
+}
+
+  #more {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px 5px 0 0;
+    color: #333;
+    font-size: 1em;
+    left: 50%;
+    margin-left: -1.25em;
+    padding: 0.5em 1em;
+    position: absolute;
+    top: -2.5em;
+    transition: all 0.3s;
+    z-index: 1;
+  }
+
+  #more:hover {
+    background: #fff;
+    cursor: pointer;
+    top: -3em;
+    padding-bottom: 1em;
+  }
+
+nav {
+  background: #373737;
+  color: #fff;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+  #navleft {
+    display: inline-block;
+    margin: 0 1em;
+    padding: 0.625em 1em;
+  }
+
+    #navigation {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    #navigation li {
+      border-radius: 5px;
+      display: inline-block;
+      font-weight: 300;
+      padding: 0.5em 1em;
+      transition: all 0.15s;
+    }
+
+    #navigation li:hover {
+      background: #444;
+      cursor: pointer;
+    }
+
+    #navigation li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    #title {
+      font-weight: 400 !important;
+    }
+
+  #navright {
+    background: #444;
+    border-radius: 5px;
+    display: inline-block;
+    float: right;
+    margin: 0.5em 2em;
+    padding: 0.625em 1em;
+  }
+
+    #navright:hover {
+      cursor: pointer;
+    }
+
+#about {
+  background: #464646;
+  color: #fff;
+  margin: 0;
+  padding: 2em 0;
+  text-align: center;
+  width: 100%;
+}
+
+  .person {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+  }
+
+  .person_contents {
+    margin: 1em 2em;
+  }
+
+  .about-me {
+    font-weight: 300;
+    text-align: justify;
+  }
+
+  #first {
+    border-right: 1px solid #888;
+    margin-right: 0;
+    padding-right: 2em;
+  }
+
+  .photo {
+    border-radius: 100%;
+    border: 0.5rem solid #7e7e7e;
+    height: auto;
+    max-height: 350px;
+    max-width: 350px;
+    transition: all 0.2s;
+    width: 35%;
+  }
+
+#goals {
+  padding: 2em;
+  text-align: center;
+}
+
+  #grid {
+    margin-top: 1.5em;
+  }
+
+  .goal {
+    background: #ddd;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 1.5%;
+    transition: background 0.3s;
+    vertical-align: top;
+    width: 20%;
+  }
+
+    .goal:hover {
+      background: #efefef;
+    }
+
+  .goal > div {
+    padding: 1em;
+  }
+
+    .goal p {
+      height: 5em;
+    }
+
+#vote {
+  background: #f0ede5;
+  text-align: center;
+}
+
+  #vote h1, #vote p, #countdown {
+    background: rgba(255, 255, 255, 0.5);
+    box-sizing: border-box !important;
+    color: #444;
+    padding: 1em 0 !important;
+    position: absolute;
+    text-shadow: 0 2px 0 #fff;
+    width: 100%;
+    z-index: 99;
+  }
+
+  #vote h1 {
+    padding-bottom: 0.5em !important;
+  }
+
+  #vote p {
+    margin-top: 5em;
+    padding-top: 0 !important;
+  }
+
+  #map {
+    height: 25em;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .gm-style img {
+    background: none !important;
+    max-width: none !important;
+  }
+
+  .gm-style-iw {
+    color: #000;
+    display: block;
+    height: auto !important;
+    line-height: 18px;
+    overflow: hidden !important;
+    white-space: nowrap;
+    width: 100% !important;
+  }
+
+  #gmap_canvas {
+    height: 100%;
+    width: 100%;
+  }
+
+  #countdown {
+    height: auto;
+    margin-top: 19em;
+    text-shadow: none;
+  }
+
+  #countdown > div > div {
+    display: inline-block;
+    margin: 0 4px;
+  }
+
+  #countdown > div > div > div {
+    background: #444;
+    color: #eee;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 8px;
+  }
+
+#contact {
+  background: #5b636a;
+  color: #d6d9dc;
+  padding: 2em;
+  text-align: center;
+}
+
+  #contact h1 {
+    margin-bottom: 0.5em;
+  }
+
+  .button {
+    background: url(../img/twitter.png) no-repeat 1em 0.7em;
+    background-size: 26px 26px;
+    border-radius: 5px;
+    border: 2px solid #d6d9dc;
+    color: #d6d9dc;
+    display: inline-block;
+    margin: 1em;
+    padding: 0.75em 3em 0.75em 3.75em;
+    text-decoration: none;
+    transition: all 0.3s;
+    width: 100px;
+  }
+
+  .button:hover {
+    background: #d6d9dc url(../img/twitter_hover.png) no-repeat 1em 0.7em;
+    color: #444;
+  }
+
+footer {
+  background: #363f48 url(../img/cssu.png) no-repeat center right;
+  background-size: 310px auto;
+  color: #aaa;
+  font-size: 0.9em;
+  padding: 1em 2em;
+}
+
+  footer a {
+    border-bottom: 1px dotted #777;
+    color: #aaa;
+    text-decoration: none;
+  }
+
+  #ccimg {
+    border-bottom: 0;
+  }
+
+  #cc {
+    font-size: 0.75em;
+    margin-top: 0;
+  }
+
+@media only screen and (max-width: 600px) {
+  .cover, #coverleft::before, #coverright::before  {
+    height: 50% !important;
+    text-align: center;
+    width: 100% !important;
+  }
+
+  #coverleft::before {
+    border-bottom: 1px solid #fff;
+    border-right: 0 !important;
+  }
+
+  #coverright::before {
+    border-left: 0 !important;
+    border-top: 1px solid #fff;
+    left: 0 !important;
+    top: 50% !important;
+  }
+
+  .name {
+    position: relative !important;
+    top: 40% !important;
+    width: 100% !important;
+  }
+
+  .person {
+    width: 100% !important;
+  }
+
+  #first {
+    border-bottom: 1px solid #888;
+    border-right: 0 !important;
+    margin-right: 2em !important;
+    padding-bottom: 1em !important;
+    padding-right: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  nav {
+    text-align: center;
+  }
+
+  #navright {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .goal {
+    margin: 1.5em 2.5% !important;
+    width: 40% !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .goal {
+    margin: 1em 0 !important;
+    width: 100% !important;
+  }
+}
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5),
+    all and (-o-min-device-pixel-ratio: 3/2),
+    all and (min--moz-device-pixel-ratio: 1.5),
+    all and (min-device-pixel-ratio: 1.5) {
+  .button {
+    background: url(../img/twitter@2x.png) no-repeat 1em 0.7em !important;
+    background-size: 26px auto !important;
+  }
+
+  .button:hover {
+    background: #d6d9dc url(../img/twitter@2x_hover.png) no-repeat 1em 0.7em !important;
+    background-size: 26px auto !important;
+  }
+
+  footer {
+    background: #363f48 url(../img/cssu@2x.png) no-repeat center right;
+    background-size: 310px auto !important;
+  }
+}
