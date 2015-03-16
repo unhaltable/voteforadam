@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400);
-@import url(http://fonts.googleapis.com/css?family=Ovo);
+@import url(http://fonts.googleapis.com/css?family=Dosis:400,500);
 @import url(http://fonts.googleapis.com/css?family=Arvo:400,400italic);
 
 body, html {
@@ -17,18 +17,21 @@ body, html {
 }
 
 h1 {
-  font: italic 2em/1em 'Arvo';
+  font: 2em/1em 'Dosis';
   margin: 0;
   text-align: center;
+  text-transform: uppercase;
 }
 
 h2 {
-  font: 2.2em/0.5em 'Ovo';
+  font: 400 2.2em/0.5em 'Dosis';
   text-shadow: 0 1px 0 #333;
+  text-transform: uppercase;
 }
 
 h3 {
-  font: italic 1em/1em 'Arvo';
+  font: 1em/1em 'Dosis';
+  text-transform: uppercase;
 }
 
 .sticky {
@@ -62,83 +65,45 @@ header {
     width: 100%;
   }
 
-  #and {
-    background: #fff;
-    border-radius: 100%;
-    font-family: 'Ovo';
-    font-size: 2em;
-    left: 50%;
-    margin-left: -1em;
-    margin-top: -1em;
-    padding: 20px;
-    position: absolute;
-    top: 50%;
-    z-index: 1;
-  }
-
-  .cover {
-    background-position: 50% 50%;
-    background-size: cover;
-    display: inline-block;
+  #cover {
+    background: url(../img/adam.jpg) center center / cover;
     height: 100%;
     width: 100%;
     z-index: -1;
   }
 
-  #coverleft {
-    background-image: url(../img/adam.jpg);
-  }
-
-  /*@media only screen and (max-width: 1500px) {
-    #coverleft {
-      background-image: url(../img/cover_jon_1500.jpg);
-    }
-  }
-
-  @media only screen and (max-width: 1000px) {
-    #coverleft {
-      background-image: url(../img/cover_jon_1000.jpg);
-    }
-  }
-
-  @media only screen and (max-width: 500px) {
-    #coverleft {
-      background-image: url(../img/cover_jon_500.jpg);
-    }
-  }*/
-
-  #coverleft::before {
+  #cover::before,
+  #cover::after {
+    background-color: rgba(115, 167, 121, 0.7);
     box-sizing: border-box;
     content: ' ';
-    height: 100%;
+    height: 50%;
+    left: -25%;
     position: absolute;
-    top: 0;
-    transition: background-color 0.3s ease-in-out;
-    width: 100%;
+    width: 150%;
   }
 
-  #coverleft::before {
-    background-color: rgba(51, 151, 251, 0.45);
-    border-right: 1px solid #fff;
-    left: 0;
+  #cover::before {
+    bottom: -10%;
+    transform: rotate(5deg);
   }
 
-    #coverleft:hover::before {
-      background-color: rgba(61, 169, 250, 0.5);
-    }
+  #cover::after {
+    bottom: -15%;
+    transform: rotate(-2deg);
+  }
 
   .name {
     color: #fff;
-    font: 2em/2em 'Ovo', serif;
+    font: 3em/2em 'Dosis', 'Impact', sans-serif;
     margin-top: -1em;
     overflow: hidden;
     position: absolute;
     text-align: center;
-    text-overflow: ellipsis;
-    text-shadow: 0 1px 0 #333;
-    top: 50%;
-    white-space: break-word;
+    text-transform: uppercase;
+    bottom: 15%;
     width: 100%;
+    z-index: 1000;
   }
 
 #content {
@@ -150,9 +115,9 @@ header {
 }
 
   #more {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.25);
     border-radius: 5px 5px 0 0;
-    color: #333;
+    color: #fff;
     font-size: 1em;
     left: 50%;
     margin-left: -1.25em;
@@ -164,14 +129,14 @@ header {
   }
 
   #more:hover {
-    background: #fff;
+    background: #888;
     cursor: pointer;
     top: -3em;
     padding-bottom: 1em;
   }
 
 nav {
-  background: #373737;
+  background: #73a779;
   color: #fff;
   font-size: 0.75em;
   text-transform: uppercase;
@@ -306,64 +271,9 @@ nav {
     box-sizing: border-box !important;
     color: #444;
     padding: 1em 0 !important;
-    position: absolute;
     text-shadow: 0 2px 0 #fff;
     width: 100%;
     z-index: 99;
-  }
-
-  #vote h1 {
-    padding-bottom: 0.5em !important;
-  }
-
-  #vote p {
-    margin-top: 5em;
-    padding-top: 0 !important;
-  }
-
-  #map {
-    height: 25em;
-    overflow: hidden;
-    width: 100%;
-  }
-
-  .gm-style img {
-    background: none !important;
-    max-width: none !important;
-  }
-
-  .gm-style-iw {
-    color: #000;
-    display: block;
-    height: auto !important;
-    line-height: 18px;
-    overflow: hidden !important;
-    white-space: nowrap;
-    width: 100% !important;
-  }
-
-  #gmap_canvas {
-    height: 100%;
-    width: 100%;
-  }
-
-  #countdown {
-    height: auto;
-    margin-top: 19em;
-    text-shadow: none;
-  }
-
-  #countdown > div > div {
-    display: inline-block;
-    margin: 0 4px;
-  }
-
-  #countdown > div > div > div {
-    background: #444;
-    color: #eee;
-    font-size: 1.2em;
-    margin: 0;
-    padding: 8px;
   }
 
 #contact {
@@ -418,61 +328,6 @@ footer {
     font-size: 0.75em;
     margin-top: 0;
   }
-
-@media only screen and (max-width: 600px) {
-  .cover, #coverleft::before, #coverright::before  {
-    height: 50% !important;
-    text-align: center;
-    width: 100% !important;
-  }
-
-  #coverleft::before {
-    border-bottom: 1px solid #fff;
-    border-right: 0 !important;
-  }
-
-  #coverright::before {
-    border-left: 0 !important;
-    border-top: 1px solid #fff;
-    left: 0 !important;
-    top: 50% !important;
-  }
-
-  .name {
-    position: relative !important;
-    top: 40% !important;
-    width: 100% !important;
-  }
-
-  .person {
-    width: 100% !important;
-  }
-
-  #first {
-    border-bottom: 1px solid #888;
-    border-right: 0 !important;
-    margin-right: 2em !important;
-    padding-bottom: 1em !important;
-    padding-right: 0 !important;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  nav {
-    text-align: center;
-  }
-
-  #navright {
-    display: none !important;
-  }
-}
-
-@media only screen and (max-width: 950px) {
-  .goal {
-    margin: 1.5em 2.5% !important;
-    width: 40% !important;
-  }
-}
 
 @media only screen and (max-width: 500px) {
   .goal {
