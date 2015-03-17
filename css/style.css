@@ -201,7 +201,6 @@ nav {
 
   .person {
     display: inline-block;
-    vertical-align: top;
     width: 50%;
   }
 
@@ -214,15 +213,9 @@ nav {
     text-align: justify;
   }
 
-  #first {
-    border-right: 1px solid #888;
-    margin-right: 0;
-    padding-right: 2em;
-  }
-
   .photo {
     border-radius: 100%;
-    border: 0.5rem solid #7e7e7e;
+    border: 0.4rem solid #73a779;
     height: auto;
     max-height: 350px;
     max-width: 350px;
@@ -240,29 +233,25 @@ nav {
   }
 
   .goal {
-    background: #ddd;
+    background: #8cbc8b;
     box-sizing: border-box;
     display: inline-block;
     margin: 1.5%;
-    transition: background 0.3s;
     vertical-align: top;
     width: 20%;
   }
-
-    .goal:hover {
-      background: #efefef;
-    }
 
   .goal > div {
     padding: 1em;
   }
 
     .goal p {
-      height: 5em;
+      min-height: 4.5em;
     }
 
 #vote {
-  background: #f0ede5;
+  background: #afcb9e;
+  padding-bottom: 2em;
   text-align: center;
 }
 
@@ -270,7 +259,7 @@ nav {
   #vote p {
     color: #444;
     margin: 0;
-    padding: 1em 0 !important;
+    padding: 1em 0 0 !important;
     width: 100%;
   }
 
@@ -286,25 +275,26 @@ nav {
   }
 
   .button {
+    background: #d6d9dc;
     border-radius: 5px;
     border: 2px solid #d6d9dc;
-    color: #d6d9dc;
+    color: #444;
     display: inline-block;
     margin: 1em;
+    max-width: 180px;
     padding: 0.75em 4em;
     text-decoration: none;
     transition: all 0.3s;
-    max-width: 180px;
   }
 
   .button:hover {
-    background: #d6d9dc;
-    color: #444;
+    box-shadow: 0 0 0 5px #73a779;
+    color: #568f52;
   }
 
 footer {
-  background: #363f48 url(../img/cssu.png) no-repeat center right 2em;
-  background-size: 310px auto;
+  background: #415b43 url(../img/cssu.png) no-repeat center right 2em;
+  background-size: 230px 230px;
   color: #aaa;
   font-size: 0.9em;
   padding: 1em 2em;
