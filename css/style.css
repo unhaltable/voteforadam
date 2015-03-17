@@ -290,7 +290,7 @@ nav {
   }
 
 footer {
-  background: #415b43 url(../img/cssu.png) no-repeat center right 2em;
+  background: #344a33 url(../img/cssu.png) no-repeat center right 2em;
   background-size: 230px 230px;
   color: #aaa;
   font-size: 0.9em;
@@ -318,7 +318,18 @@ footer {
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 775px) {
+  .goal {
+    margin: 1em 0 !important;
+    width: 100% !important;
+  }
+
+  .person {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 850px) {
   nav {
     text-align: center;
   }
@@ -326,33 +337,15 @@ footer {
   #navright {
     display: none !important;
   }
-
-  .goal {
-    margin: 1em 0 !important;
-    width: 100% !important;
-  }
-
-  .person {
-    width: 100% !important;
-  }
 }
 
 @media all and (-webkit-min-device-pixel-ratio: 1.5),
     all and (-o-min-device-pixel-ratio: 3/2),
     all and (min--moz-device-pixel-ratio: 1.5),
     all and (min-device-pixel-ratio: 1.5) {
-  .button {
-    background: url(../img/twitter@2x.png) no-repeat 1em 0.7em !important;
-    background-size: 26px auto !important;
-  }
-
-  .button:hover {
-    background: #d6d9dc url(../img/twitter@2x_hover.png) no-repeat 1em 0.7em !important;
-    background-size: 26px auto !important;
-  }
 
   footer {
-    background: #363f48 url(../img/cssu@2x.png) no-repeat center right;
-    background-size: 310px auto !important;
+    background-image: url(../img/cssu@2x.png);
   }
+
 }
