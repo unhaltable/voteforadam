@@ -201,11 +201,8 @@ nav {
 
   .person {
     display: inline-block;
-    width: 50%;
-  }
-
-  .person_contents {
     margin: 1em 2em;
+    width: 50%;
   }
 
   .about-me {
@@ -217,10 +214,10 @@ nav {
     border-radius: 100%;
     border: 0.4rem solid #73a779;
     height: auto;
-    max-height: 350px;
-    max-width: 350px;
+    max-height: 250px;
+    max-width: 250px;
     transition: all 0.2s;
-    width: 35%;
+    width: 50%;
   }
 
 #goals {
@@ -246,7 +243,7 @@ nav {
   }
 
     .goal p {
-      min-height: 4.5em;
+      min-height: 5em;
     }
 
 #vote {
@@ -316,15 +313,6 @@ footer {
   }
 
 @media only screen and (max-width: 500px) {
-  .goal {
-    margin: 1em 0 !important;
-    width: 100% !important;
-  }
-
-  .person {
-    width: 100% !important;
-  }
-
   footer {
     background-position: center center;
   }
@@ -337,6 +325,15 @@ footer {
 
   #navright {
     display: none !important;
+  }
+
+  .goal {
+    margin: 1em 0 !important;
+    width: 100% !important;
+  }
+
+  .person {
+    width: 100% !important;
   }
 }
 
