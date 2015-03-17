@@ -1,6 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400);
 @import url(http://fonts.googleapis.com/css?family=Dosis:400,500);
-@import url(http://fonts.googleapis.com/css?family=Arvo:400,400italic);
 
 body,
 html {
@@ -130,7 +129,7 @@ header {
   }
 
   #more:hover {
-    background: #888;
+    background: #275c23;
     cursor: pointer;
     top: -3em;
     padding-bottom: 1em;
@@ -276,7 +275,7 @@ nav {
   }
 
 #contact {
-  background: #5b636a;
+  background: #568f52 url(../img/ics.png) fixed center center;;
   color: #d6d9dc;
   padding: 2em;
   text-align: center;
