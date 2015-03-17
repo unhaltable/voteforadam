@@ -2,7 +2,7 @@ body,
 html {
   background: #292929;
   color: #333;
-  font: 1em/1.5em Lato, Helvetica, Arial, sans-serif;
+  font: 1em/1.5em 'Lato', Helvetica, Arial, sans-serif;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -128,8 +128,8 @@ header {
   #more:hover {
     background: #275c23;
     cursor: pointer;
-    top: -3em;
     padding-bottom: 1em;
+    top: -3em;
   }
 
 nav {
@@ -336,13 +336,8 @@ footer {
   }
 }
 
-@media all and (-webkit-min-device-pixel-ratio: 1.5),
-    all and (-o-min-device-pixel-ratio: 3/2),
-    all and (min--moz-device-pixel-ratio: 1.5),
-    all and (min-device-pixel-ratio: 1.5) {
-
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   footer {
     background-image: url(../img/cssu@2x.png);
   }
-
 }
